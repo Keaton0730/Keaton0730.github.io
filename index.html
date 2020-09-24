@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vibe Zone</title>
+    <style>
+    body {
+        background: rgb(248, 248, 255);
+        color: rgb(45, 45, 45);
+        padding: 10px;
+        font-family: arial;
+    }
+    #all-contents {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* navigation menu */
+    nav {
+        background: rgb(255, 179, 218);
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+        padding: 10px;
+    }
+    h1 {
+        display: flex;
+        align-items: center;
+        color: white;
+        flex: 1;
+        margin: 0;
+    }
+    #nav-ul {
+        list-style-image: none;
+    }
+    .nav-li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* main container area beneath menu */
+    main {
+        background: rgb(255, 179, 218);
+        display: flex;
+    }
+    .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+    }
+    .sidebar-img {
+        width: 550px;
+    }
+    .content {
+        flex: 1;
+        padding: 15px;
+    }
+    #interests {
+        border: 4px silver ridge;
+        padding: 8px;
+    }
+    h2, h3 {
+        margin: 0px;
+    }
+</style>
+</head>
+<body>
+
+    <!-- all content here -->
+    <div id="all-contents">
+
+
+        <nav>
+            <h1>The chillist zone</h1>
+            <ul id="nav-ul">
+                <li class="nav-li">
+                <a href="index.html"> Home </a>
+                </li>
+                <li class="nav-li">
+                <a href="portfolio.html"> Portfolio </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Sidebar section -->
+            <div class="sidebar">
+                <img class="sidebar-img" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cb00b08b-38cd-460c-bc32-4700f3e6ffb7/dbyon0b-ab751f0c-6780-40af-8686-cf8c823e9553.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvY2IwMGIwOGItMzhjZC00NjBjLWJjMzItNDcwMGYzZTZmZmI3XC9kYnlvbjBiLWFiNzUxZjBjLTY3ODAtNDBhZi04Njg2LWNmOGM4MjNlOTU1My5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.FIa5o7emYRV23JeVwHSR-F8D7fvmBi0MDuz4ex77iJs">
+            </div>
+            <!-- Content section-->
+            <div class="content">
+            
+                <h2>Keaton C.</h2>
+                <p>Student at LAVCA</p>
+                <!-- Intrest section -->
+                <div id="interests">
+                    <h3>Intrest<h3>
+                    <ul>
+                        <li>Skateboarding</li>
+                        <li>Anime</li>
+                        <li>Cars</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+   
+</body>
+</html>

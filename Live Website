@@ -1,0 +1,11 @@
+git clone https://github.com/Keaton0730/Keaton0730.github.io
+
+cd Keaton0730.github.io
+
+echo "Hello World" > index.html
+
+git add --all
+
+git commit -m "Initial commit"
+
+git push -u origin master
