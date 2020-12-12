@@ -73,6 +73,13 @@
 			function update() {
                 newPositionX = newPositionX + speed;
                 moveBoxTo(newPositionX);
+                if (newPositionX > boardWidth) {
+                     speed = speed * -1;
+                };
+
+                if (newPositionX < 0) {
+                    speed = speed / -1;
+                };
 				
 
 			};
@@ -83,14 +90,21 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-                positionX = 0;
+                newPositionX = 0;
                 
                 points = points + 1;
                 
+                console.log("hello")
                 changeBoxText(points);
 
-                speed = speed + 10;
-				
+                
+                if (speed > 0) {
+                    speed = speed + 3;
+                };
+
+                if (speed < 0) {
+                    speed = speed - 3
+                };
 
 
 			};
